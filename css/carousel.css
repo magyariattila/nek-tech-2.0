@@ -11,6 +11,13 @@ body {
   color: #5a5a5a;
 }
 
+.logo-navbar{
+  margin:0 20px 0 10px;
+}
+
+.navbar-brand{
+  font-family: Audiowide;
+}
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
