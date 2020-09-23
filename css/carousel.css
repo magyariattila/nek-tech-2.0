@@ -1,4 +1,4 @@
-/* GLOBAL STYLES
+/* GLOBAL STYLEcolS
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
 html {
@@ -165,21 +165,21 @@ body {
 
 .logo-back-wifi {
   border-radius: 200px;
-  background-color: #89c9b8;
+  background-color: #d5e8eb;
   color: white;
   transform: rotateY(180deg);
 }
 
 .logo-back-cam {
   border-radius: 200px;
-  background-color: #89c9b8;
+  background-color: #d5e8eb;
   color: white;
   transform: rotateY(180deg);
 }
 
 .logo-back-sec {
   border-radius: 200px;
-  background-color: #89c9b8;
+  background-color: #d5e8eb;
   color: white;
   transform: rotateY(180deg);
 }
