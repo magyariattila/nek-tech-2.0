@@ -9,6 +9,7 @@ body {
   padding-top: 3rem;
   padding-bottom: 3rem;
   color: #5a5a5a;
+  font-family: Audiowide;
 }
 
 .logo-navbar{
@@ -45,7 +46,14 @@ body {
 }
 
 .row{
-  margin-top: 50px;
+  margin-top: 70px;
+}
+
+.website-title{
+  padding-top: 30px;
+  font-family: Audiowide;
+  font-size: large;
+  text-align: center;
 }
 
 /* MARKETING CONTENT
@@ -161,6 +169,7 @@ body {
   height: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  margin-top: 25px;
 }
 
 .logo-back-wifi {
@@ -217,6 +226,17 @@ body {
   letter-spacing: -.05rem;
 }
 
+.sec-listItem{
+  font-size: 23px;
+}
+
+.net-listItem{
+  font-size: 23px;
+}
+
+.cam-listItem{
+  font-size: 23px;
+}
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
@@ -236,6 +256,7 @@ body {
 
 @media (min-width: 62em) {
   .featurette-heading {
-    margin-top: 7rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
   }
 }
