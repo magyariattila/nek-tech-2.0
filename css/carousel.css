@@ -235,7 +235,64 @@ body {
 }
 
 .cam-listItem{
+  position: relative;
   font-size: 23px;
+}
+
+.cam-info{
+  position: relative;
+  display: inline-block;
+}
+
+.cam-info .tooltiptext {
+  visibility: hidden;
+  width: auto;
+  background-color: #76b7b1;;
+  color: #fff;
+  text-align: left;
+  border-radius: 6px;
+  padding: 5px 20px 0 0;
+  font-size: 18px;
+  font-style: italic;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.cam-info:hover .tooltiptext {
+  visibility: visible;
+}
+
+.cam-info .tooltiptextLeft {
+  visibility: hidden;
+  width: auto;
+  background-color: #76b7b1;;
+  color: #fff;
+  text-align: left;
+  border-radius: 6px;
+  padding: 5px 20px 0 0;
+  font-size: 18px;
+  font-style: italic;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: -500%;
+  margin-left: -60px;
+}
+
+.cam-info:hover .tooltiptextLeft {
+  visibility: visible;
+}
+
+.contacts{
+  text-align: center;
+  font-size: 18px;
 }
 
 /* RESPONSIVE CSS
