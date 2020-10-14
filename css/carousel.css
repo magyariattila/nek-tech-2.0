@@ -295,6 +295,43 @@ body {
   font-size: 18px;
 }
 
+#camInfo {
+  width: 100%;
+  padding: 20px;
+  background-color: #d5e8eb;
+  margin-top: 20px;
+  border-radius: 20px;
+}
+
+.camButton{
+  margin-top: 20px;
+  border: none;
+  background-color: white;
+}
+
+
+#netInfo {
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background-color: #d5e8eb;
+  margin-top: 70px;
+}
+
+.netButton{
+  float: right;
+  margin-top: 20px;
+  border: none;
+  background-color: white;
+}
+
+#secInfo {
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background-color: #d5e8eb;
+  margin-top: 20px;
+}
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
