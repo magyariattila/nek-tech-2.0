@@ -301,6 +301,7 @@ body {
   background-color: #d5e8eb;
   margin-top: 20px;
   border-radius: 20px;
+  display: none;
 }
 
 .camButton{
@@ -313,9 +314,10 @@ body {
 #netInfo {
   width: 100%;
   padding: 50px 0;
-  text-align: center;
   background-color: #d5e8eb;
   margin-top: 70px;
+  border-radius: 20px;
+  display: none;
 }
 
 .netButton{
@@ -327,11 +329,17 @@ body {
 
 #secInfo {
   width: 100%;
-  padding: 50px 0;
-  text-align: center;
+  padding: 20px;
   background-color: #d5e8eb;
   margin-top: 20px;
+  border-radius: 20px;
+  display: none;
 }
+
+.secButton{
+  margin-top: 20px;
+  border: none;
+  background-color: white;
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 

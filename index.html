@@ -39,10 +39,10 @@
     <script>
       function camFunction() {
         var x = document.getElementById("camInfo");
-        if (x.style.display === "none") {
-          x.style.display = "block";
-        } else {
+        if (x.style.display === "block") {
           x.style.display = "none";
+        } else {
+          x.style.display = "block";
         }
       }
     </script>
@@ -50,10 +50,10 @@
     <script>
       function netFunction() {
         var x = document.getElementById("netInfo");
-        if (x.style.display === "none") {
-          x.style.display = "block";
-        } else {
+        if (x.style.display === "block") {
           x.style.display = "none";
+        } else {
+          x.style.display = "block";
         }
       }
     </script>
@@ -61,10 +61,10 @@
     <script>
       function secFunction() {
         var x = document.getElementById("secInfo");
-        if (x.style.display === "none") {
-          x.style.display = "block";
-        } else {
+        if (x.style.display === "block") {
           x.style.display = "none";
+        } else {
+          x.style.display = "block";
         }
       }
     </script>
@@ -78,7 +78,7 @@
         </a>
         <a class="navbar-brand" href="#">Nek-tech</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon" ></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav mr-auto">
@@ -241,11 +241,12 @@
 
     <div id="camInfo">
       <ul>
-        <li>a rendszer kiépítését alapos helyszínfelmérés előzi meg, amely során igyekszünk az ügyfél minden kérését teljesíteni</li>
-        <li>az esztétikát szem előtt tartva, az UTP kábeleket igyekszünk elrejteni</li>
-        <li>a központi rögzítő egységet (DVR) a lehetőségekhez mérten a legbiztonságosabb módon helyezzük el</li>
-        <li>igény esetén gondoskodunk a hálózat (router, switch) és internet (műholdas) kiépítéséről is</li>
-        <li>célunk a legújabb technológiák használata, emellett a leghosszabb garanciaidő biztosítása</li>
+        <li style="margin-top: 10px;">a rendszer kiépítését alapos helyszínfelmérés előzi meg, amely során igyekszünk az ügyfél minden kérését teljesíteni</li>
+        <li style="margin-top: 10px;">az esztétikát szem előtt tartva, az UTP kábeleket igyekszünk elrejteni</li>
+        <li style="margin-top: 10px;">a központi rögzítő egységet (DVR) a lehetőségekhez mérten a legbiztonságosabb módon helyezzük el</li>
+        <li style="margin-top: 10px;">igény esetén gondoskodunk a hálózat (router, switch) és internet (műholdas) kiépítéséről is</li>
+        <li style="margin-top: 10px;">célunk a legújabb technológiák használata, emellett a leghosszabb garanciaidő biztosítása</li>
+        <li style="margin-top: 10px;">rendszereink távolról is bármikor nézhetőek és visszanézhatőek</li>
       </ul>
     </div>
 
@@ -388,7 +389,17 @@
     <button class="netButton" onclick="netFunction()">További információ</button>
 
     <div id="netInfo">
-      This is my DIV element.
+      <ul>
+        <li style="margin-top: 10px;">helyszínfelmérés során vázlatosan kialakítjuk a hálózati topológiát (csillagpontos elrendezés)</li>
+        <li style="margin-top: 10px;">cégünk elhivatott a minőség mellett, ezért az általunk üzembe helyezett eszközök ipari minőségűek (Mikrotik, Unifi)</li>
+        <li style="margin-top: 10px;">magas rendelkezésre állás esetén műholdas internetet biztosítunk (backup internet)</li>
+        <li style="margin-top: 10px;">akár vállalati, akár otthoni felhasználás esetén vállaljuk a hálózati nyopmtatás beállítását, laptopról és asztali számítógépről egyaránt</li>
+        <li style="margin-top: 10px;">a központi adattárolás és szoftverhasználat használata érdekében szerver üzemeltetése valamint karbantartása lokálisan és felhőben (24/7)</li>
+        <li style="margin-top: 10px;">stabil és gyors wifi hálózat kiépítése irodai és otthoni környezetben egyaránt</li>
+        <li style="margin-top: 10px;">levelezőszolgáltatásunk használatával egyedi e-mail címet biztosítunk</li>
+        <li style="margin-top: 10px;">a vállalati levelezést titkosítva egy szerveren tároljuk, mely bármikor visszaállítható</li>
+        <li style="margin-top: 10px;">az általunk telepített hálózatot egyedi tűzfal-technológiánkkal tesszük a legbiztonságosabbá</li>
+      </ul>
     </div>
 
     <hr class="featurette-divider" id="featurette-divider3">
@@ -469,10 +480,19 @@
       </div>
     </div>
 
-    <button style="margin-top: 20px;" onclick="secFunction()">További információ</button>
+    <button class="secButton" style="margin-top: 20px;" onclick="secFunction()">További információ</button>
 
     <div id="secInfo">
-      This is my DIV element.
+      <ul>
+        <li style="margin-top: 10px;">a helyszínfelmérés alkalmával számításba veszünk minden behatolási lehetőséget</li>
+        <li style="margin-top: 10px;">vállaljuk vezetékes és vezetéknélküli riasztórendszerek kiépítését</li>
+        <li style="margin-top: 10px;">vezeték nélküli rendszerünk kiépítését akár egy délelőtt alatt vállaljuk</li>
+        <li style="margin-top: 10px;">rendszereink képesek minden típusú szabotázsról értesíteni a tulajdonost (SMS, applikáció)</li>
+        <li style="margin-top: 10px;">vagyonvédelmi modulok mellett rendszerünkbe integrálhatóak kármegelőzést segítő érzékelők (CO, füst, hő, beázás)</li>
+        <li style="margin-top: 10px;">ögyfelünket összekötjük az általa választott távfelügyeleti szervvel</li>
+        <li style="margin-top: 10px;">az applikáció használatával bárhonnan ki és bekapcsolhatja a rendszerben elhelyezettt okos konnektorokat</li>
+        <li style="margin-top: 10px;">telefonja segítségével bármikor nyomon követheti ingatlanja állapotát</li>
+      </ul>
     </div>
 
     <hr style="margin-bottom: 20px;" class="featurette-divider">
@@ -496,4 +516,5 @@
 </main>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
       <script>window.jQuery || document.write('<script src="js/jquery.slim.min.js"><\/script>')</script><script src="js\bootstrap.bundle.min.js"></script>
+</body>
 </html>
