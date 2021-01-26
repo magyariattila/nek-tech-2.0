@@ -361,6 +361,74 @@ body {
   height: 70%;
 }
 
+/* PRICES CSS
+-------------------------------------------------- */
+
+/*
+@keyframes strike {
+  from { text-decoration-color: transparent; }
+  to { text-decoration-color: red; }
+}
+.strike {
+  text-decoration: line-through;
+  text-decoration-color: red;
+  animation: strike 3s linear;
+}
+*/
+
+.item {
+  width: 200px;
+  height: 200px;
+  margin: 50px auto;
+  padding-top: 75px;
+  background: #ccc;
+  text-align: center;
+  color: #FFF;
+  font-size: 3em;
+}
+
+/* Animations */
+[data-aos=example-anim1] {
+  transform: skewX(45deg);
+  opacity: 0;
+  transition-property: transform, opacity;
+}
+[data-aos=example-anim1].aos-animate {
+  transform: skewX(0);
+  opacity: 1;
+}
+
+[data-aos=example-anim2] {
+  background: red;
+  transition-property: background;
+}
+[data-aos=example-anim2].aos-animate {
+  background: green;
+}
+
+[data-aos=example-anim3] {
+  transform: rotate(360deg);
+  opacity: 0;
+  transition-property: transform, opacity;
+}
+[data-aos=example-anim3].aos-animate {
+  transform: rotate(0);
+  opacity: 1;
+}
+
+.strike { position:relative; }
+.strike::after {
+  content:' ';
+  position:absolute;
+  top:50%; left:-3%;
+  width:0; height:10px;
+  opacity:60%;
+  transform:translateY(-50%);
+  background:repeat-x url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAKAQMAAAByjsdvAAAABlBMVEUAAADdMzNrjRuKAAAAAXRSTlMAQObYZgAAADdJREFUCNdj+MMABP8ZGCQY/h9g+MHw/AHzDwbGD+w/GBhq6h8wMNj/b2BgkP8HVMMPUsn+gQEAsTkQNRVnI4cAAAAASUVORK5CYII=);
+  animation: strike 2s linear .3s 1 forwards;
+}
+@keyframes strike { to { width: 106%; } }
+
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
