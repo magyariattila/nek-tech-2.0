@@ -39,6 +39,46 @@
   </head>
   <body>
 
+    <script>
+      function cloud() {
+        var x = document.getElementById("cloud");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+          document.getElementById("cloudTriangle").innerHTML = '&#9660;';
+        } else {
+          x.style.display = "block";
+          document.getElementById("cloudTriangle").innerHTML = '&#9650;';
+        }
+      }
+
+    </script>
+
+    <script>
+      function camera() {
+        var x = document.getElementById("camera");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+          document.getElementById("cameraTriangle").innerHTML = '&#9660;';
+        } else {
+          x.style.display = "block";
+          document.getElementById("cameraTriangle").innerHTML = '&#9650;';
+        }
+      }
+    </script>
+
+    <script>
+      function riaszto() {
+        var x = document.getElementById("riaszto");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+          document.getElementById("riasztoTriangle").innerHTML = '&#9660;';
+        } else {
+          x.style.display = "block";
+          document.getElementById("riasztoTriangle").innerHTML = '&#9650;';
+        }
+      }
+    </script>
+
     <header>
       <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #76b7b1;">
         <a href="index.html" role="button">
@@ -75,18 +115,73 @@
       <br>
       <a class="" style="font-family: Audiowide; color: black;" href="tel:+36707766301"> +36707766301<span class="sr-only">(current)</span></a>
       <p style="margin: 5px; font-size: 20px; color: black;">ajanlat<span style="font-family: sans-serif;">@</span>nek-tech.hu</p>
-      <hr style="margin-bottom: 50px; margin-top: 50px;" class="featurette-divider">
-      <h2 style="margin-top: 60px; margin-bottom: 60px;">Árlista</h2>
     </div>
 
     <!-- Marketing messaging and featurettes
     ================================================== -->
     <!-- Wrap the rest of the page in another container to center all the content. -->
+
+<!--
+    <hr style="margin-bottom: 50px; margin-top: 50px;" class="featurette-divider">
+    <h2 style="margin-top: 60px; margin-bottom: 60px; text-align: center;">Technológiánk, gyakori kérdések</h2>
+
+    <div class="">
+      <button class="camButton" onclick="cloud()">Biztonságos és költséghatékony egyedi felhős rögzítés <span id="cloudTriangle">&#9660;</span></button>
+
+      <div id="cloud">
+        <ul>
+          <li style="margin-top: 10px;">a rendszer kiépítését alapos helyszínfelmérés előzi meg, amely során igyekszünk az <strong>Ügyfél minden kérését teljesíteni</strong></li>
+          <li style="margin-top: 10px;">az <strong>esztétikát</strong> szem előtt tartva, az UTP kábeleket igyekszünk elrejteni</li>
+          <li style="margin-top: 10px;">a központi rögzítő egységet (DVR) a lehetőségekhez mérten a <strong>legbiztonságosabb</strong> módon helyezzük el</li>
+          <li style="margin-top: 10px;">igény esetén gondoskodunk a hálózat (router, switch) és internet (műholdas) kiépítéséről is</li>
+          <li style="margin-top: 10px;">célunk a <strong>legújabb technológiák</strong> használata, emellett a <strong>leghosszabb garanciaidő</strong> biztosítása</li>
+          <li style="margin-top: 10px;">vezeték nélküli kamerák használata wifi kapcsolattal <strong>(kisállat megfigyelés)</strong> </li>
+          <li style="margin-top: 10px;">rendszereink <strong>távolról is bármikor</strong> nézhetőek és visszanézhatőek</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="">
+      <button class="camButton" onclick="camera()">1080p HD IP Kamera rendszer <span id="cameraTriangle">&#9660;</span></button>
+
+      <div id="camera">
+        <ul>
+          <li style="margin-top: 10px;">a rendszer kiépítését alapos helyszínfelmérés előzi meg, amely során igyekszünk az <strong>Ügyfél minden kérését teljesíteni</strong></li>
+          <li style="margin-top: 10px;">az <strong>esztétikát</strong> szem előtt tartva, az UTP kábeleket igyekszünk elrejteni</li>
+          <li style="margin-top: 10px;">a központi rögzítő egységet (DVR) a lehetőségekhez mérten a <strong>legbiztonságosabb</strong> módon helyezzük el</li>
+          <li style="margin-top: 10px;">igény esetén gondoskodunk a hálózat (router, switch) és internet (műholdas) kiépítéséről is</li>
+          <li style="margin-top: 10px;">célunk a <strong>legújabb technológiák</strong> használata, emellett a <strong>leghosszabb garanciaidő</strong> biztosítása</li>
+          <li style="margin-top: 10px;">vezeték nélküli kamerák használata wifi kapcsolattal <strong>(kisállat megfigyelés)</strong> </li>
+          <li style="margin-top: 10px;">rendszereink <strong>távolról is bármikor</strong> nézhetőek és visszanézhatőek</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="">
+      <button class="camButton" onclick="riaszto()">Vezeték nélküli riasztó rendszer <span id="riasztoTriangle">&#9660;</span></button>
+
+      <div id="riaszto">
+        <ul>
+          <li style="margin-top: 10px;">a rendszer kiépítését alapos helyszínfelmérés előzi meg, amely során igyekszünk az <strong>Ügyfél minden kérését teljesíteni</strong></li>
+          <li style="margin-top: 10px;">az <strong>esztétikát</strong> szem előtt tartva, az UTP kábeleket igyekszünk elrejteni</li>
+          <li style="margin-top: 10px;">a központi rögzítő egységet (DVR) a lehetőségekhez mérten a <strong>legbiztonságosabb</strong> módon helyezzük el</li>
+          <li style="margin-top: 10px;">igény esetén gondoskodunk a hálózat (router, switch) és internet (műholdas) kiépítéséről is</li>
+          <li style="margin-top: 10px;">célunk a <strong>legújabb technológiák</strong> használata, emellett a <strong>leghosszabb garanciaidő</strong> biztosítása</li>
+          <li style="margin-top: 10px;">vezeték nélküli kamerák használata wifi kapcsolattal <strong>(kisállat megfigyelés)</strong> </li>
+          <li style="margin-top: 10px;">rendszereink <strong>távolról is bármikor</strong> nézhetőek és visszanézhatőek</li>
+        </ul>
+      </div>
+    </div>
+  -->
+
+    <hr style="margin-bottom: 50px; margin-top: 50px;" class="featurette-divider">
+    <h2 style="margin-top: 60px; margin-bottom: 60px; text-align: center;">Árlista</h2>
+
     <div class="" style="margin-bottom: 60pt;">
       <h3>Techson Kamera Rendszer</h3>
       <table class="table">
         <thead class="thead-dark">
-          <tr>
+          <tr style="text-align: center;">
             <th scope="col">Megnevezés</th>
             <th scope="col">Leírás</th>
             <th scope="col">Ár</th>
@@ -103,7 +198,13 @@
                 <li>250 GB 24/7 HDD (2 hét rögzítés)</li>
               </ul>
             </td>
-            <td>118 304 Ft</td>
+            <td style="text-align: center; vertical-align: middle;">
+              <ul style="list-style-type:none;">
+                <li>139 599 Ft</li>
+                <li data-aos="zoom-in" style="color: red; font-size: 25px; font-weight: strong;">118 304 Ft</li>
+              </ul>
+            </td>
+
           </tr>
           <tr>
             <td>2 kamerás IP kamera rendszer</td>
@@ -115,7 +216,12 @@
                 <li>500 GB 24/7 HDD (2 hét rögzítés)</li>
               </ul>
             </td>
-            <td>162 829 Ft</td>
+            <td style="text-align: center; vertical-align: middle;">
+              <ul style="list-style-type:none;">
+                <li>195 395 Ft</li>
+                <li data-aos="zoom-in" style="color: red; font-size: 25px; font-weight: strong;">169 829 Ft</li>
+              </ul>
+            </td>
           </tr>
           <tr>
             <td>3 kamerás IP kamera rendszer</td>
@@ -127,7 +233,12 @@
                 <li>1 TB 24/7 HDD (1,5 hét rögzítés)</li>
               </ul>
             </td>
-            <td>206 845 Ft</td>
+            <td style="text-align: center; vertical-align: middle;">
+              <ul style="list-style-type:none;">
+                <li>252 351 Ft</li>
+                <li data-aos="zoom-in" style="color: red; font-size: 25px; font-weight: strong;">206 845 Ft</li>
+              </ul>
+            </td>
           </tr>
           <tr>
             <td>4 kamerás IP kamera rendszer</td>
@@ -139,7 +250,12 @@
                 <li>1 TB 24/7 HDD (2 hét rögzítés)</li>
               </ul>
             </td>
-            <td>251 879 Ft</td>
+            <td style="text-align: center; vertical-align: middle;">
+              <ul style="list-style-type:none;">
+                <li>314 849 Ft</li>
+                <li data-aos="zoom-in" style="color: red; font-size: 25px; font-weight: strong;">251 879 Ft</li>
+              </ul>
+            </td>
           </tr>
           <tr>
             <td>5 kamerás IP kamera rendszer</td>
@@ -151,7 +267,12 @@
                 <li>1 TB 24/7 HDD (2 hét rögzítés)</li>
               </ul>
             </td>
-            <td>316 365 Ft</td>
+            <td style="text-align: center; vertical-align: middle;">
+              <ul style="list-style-type:none;">
+                <li>379 638 Ft</li>
+                <li data-aos="zoom-in" style="color: red; font-size: 25px; font-weight: strong;">316 365 Ft</li>
+              </ul>
+            </td>
           </tr>
           <tr>
             <td>6 kamerás IP kamera rendszer</td>
@@ -163,8 +284,16 @@
                 <li>2 TB 24/7 HDD (3 hét rögzítés)</li>
               </ul>
             </td>
+            <!--
             <td>
-              <!-- <span class="strike">340 929 Ft</span> -->356 624 Ft
+              <span class="strike">340 929 Ft</span> 356 624 Ft
+            </td>
+            -->
+            <td style="text-align: center; vertical-align: middle;">
+              <ul style="list-style-type:none;">
+                <li>427 949 Ft</li>
+                <li data-aos="zoom-in" style="color: red; font-size: 25px; font-weight: strong;">356 624 Ft</li>
+              </ul>
             </td>
           </tr>
           <tr>
@@ -177,7 +306,12 @@
                 <li>2 TB 24/7 HDD (3 hét rögzítés)</li>
               </ul>
             </td>
-            <td>401 149 Ft</td>
+            <td style="text-align: center; vertical-align: middle;">
+              <ul style="list-style-type:none;">
+                <li>481 379 Ft</li>
+                <li data-aos="zoom-in" style="color: red; font-size: 25px; font-weight: strong;">401 149 Ft</li>
+              </ul>
+            </td>
           </tr>
           <tr>
             <td>8 kamerás IP kamera rendszer</td>
@@ -189,7 +323,12 @@
                 <li>2 TB 24/7 HDD (2,5 hét rögzítés)</li>
               </ul>
             </td>
-            <td>445 674 Ft</td>
+            <td style="text-align: center; vertical-align: middle;">
+              <ul style="list-style-type:none;">
+                <li>579 376 Ft</li>
+                <li data-aos="zoom-in" style="color: red; font-size: 25px; font-weight: strong;">445 674 Ft</li>
+              </ul>
+            </td>
           </tr>
           <tr>
             <td>32 kamerás IP kamera rendszer</td>
@@ -201,7 +340,12 @@
                 <li>8 TB 24/7 HDD (2 hét rögzítés)</li>
               </ul>
             </td>
-            <td>1 755 011 Ft</td>
+            <td style="text-align: center; vertical-align: middle;">
+              <ul style="list-style-type:none;">
+                <li>2 369 264 Ft</li>
+                <li data-aos="zoom-in" style="color: red; font-size: 25px; font-weight: strong;">1 755 011 Ft</li>
+              </ul>
+            </td>
           </tr>
         </tbody>
       </table>
@@ -213,7 +357,7 @@
       <h3>Hikvision Kamera Rendszer</h3>
       <table class="table">
         <thead class="thead-dark">
-          <tr>
+          <tr style="text-align: center;">
             <th scope="col">Megnevezés</th>
             <th scope="col">Leírás</th>
             <th scope="col">Ár</th>
@@ -230,7 +374,12 @@
                 <li>250 GB 24/7 HDD (2 hét rögzítés)</li>
               </ul>
             </td>
-            <td>151 965 Ft</td>
+            <td style="text-align: center; vertical-align: middle;">
+              <ul style="list-style-type:none;">
+                <li>179 319 Ft</li>
+                <li data-aos="zoom-in" style="color: red; font-size: 25px; font-weight: strong;">151 965 Ft</li>
+              </ul>
+            </td>
           </tr>
           <tr>
             <td>2 kamerás IP kamera rendszer</td>
@@ -242,7 +391,12 @@
                 <li>500 GB 24/7 HDD (2 hét rögzítés)</li>
               </ul>
             </td>
-            <td>210 395 Ft</td>
+            <td style="text-align: center; vertical-align: middle;">
+              <ul style="list-style-type:none;">
+                <li>241 954 Ft</li>
+                <li data-aos="zoom-in" style="color: red; font-size: 25px; font-weight: strong;">210 395 Ft</li>
+              </ul>
+            </td>
           </tr>
           <tr>
             <td>3 kamerás IP kamera rendszer</td>
@@ -254,7 +408,12 @@
                 <li>1 TB 24/7 HDD (1,5 hét rögzítés)</li>
               </ul>
             </td>
-            <td>242 891 Ft</td>
+            <td style="text-align: center; vertical-align: middle;">
+              <ul style="list-style-type:none;">
+                <li>296 327 Ft</li>
+                <li data-aos="zoom-in" style="color: red; font-size: 25px; font-weight: strong;">242 891 Ft</li>
+              </ul>
+            </td>
           </tr>
           <tr>
             <td>4 kamerás IP kamera rendszer</td>
@@ -266,7 +425,12 @@
                 <li>1 TB 24/7 HDD (2 hét rögzítés)</li>
               </ul>
             </td>
-            <td>327 255 Ft</td>
+            <td style="text-align: center; vertical-align: middle;">
+              <ul style="list-style-type:none;">
+                <li>409 069 Ft</li>
+                <li data-aos="zoom-in" style="color: red; font-size: 25px; font-weight: strong;">327 255 Ft</li>
+              </ul>
+            </td>
           </tr>
           <tr>
             <td>5 kamerás IP kamera rendszer</td>
@@ -278,7 +442,12 @@
                 <li>1 TB 24/7 HDD (2 hét rögzítés)</li>
               </ul>
             </td>
-            <td>369 206 Ft</td>
+            <td style="text-align: center; vertical-align: middle;">
+              <ul style="list-style-type:none;">
+                <li>443 047 Ft</li>
+                <li data-aos="zoom-in" style="color: red; font-size: 25px; font-weight: strong;">369 206 Ft</li>
+              </ul>
+            </td>
           </tr>
           <tr>
             <td>6 kamerás IP kamera rendszer</td>
@@ -290,7 +459,13 @@
                 <li>2 TB 24/7 HDD (3 hét rögzítés)</li>
               </ul>
             </td>
-            <td><!--<span class="strike">444 115 Ft</span>-->444 115 Ft</td>
+            <!--<td><span class="strike">444 115 Ft</span>444 115 Ft</td>-->
+            <td style="text-align: center; vertical-align: middle;">
+              <ul style="list-style-type:none;">
+                <li>532 938 Ft</li>
+                <li data-aos="zoom-in" style="color: red; font-size: 25px; font-weight: strong;">444 115 Ft</li>
+              </ul>
+            </td>
           </tr>
           <tr>
             <td>7 kamerás IP kamera rendszer</td>
@@ -302,7 +477,12 @@
                 <li>2 TB 24/7 HDD (3 hét rögzítés)</li>
               </ul>
             </td>
-            <td>479 678 Ft</td>
+            <td style="text-align: center; vertical-align: middle;">
+              <ul style="list-style-type:none;">
+                <li>585 207 Ft</li>
+                <li data-aos="zoom-in" style="color: red; font-size: 25px; font-weight: strong;">479 678 Ft</li>
+              </ul>
+            </td>
           </tr>
           <tr>
             <td>8 kamerás IP kamera rendszer</td>
@@ -314,7 +494,12 @@
                 <li>2 TB 24/7 HDD (2,5 hét rögzítés)</li>
               </ul>
             </td>
-            <td>560 975 Ft</td>
+            <td style="text-align: center; vertical-align: middle;">
+              <ul style="list-style-type:none;">
+                <li>729 268 Ft</li>
+                <li data-aos="zoom-in" style="color: red; font-size: 25px; font-weight: strong;">560 975 Ft</li>
+              </ul>
+            </td>
           </tr>
           <tr>
             <td>32 kamerás IP kamera rendszer</td>
@@ -326,7 +511,12 @@
                 <li>8 TB 24/7 HDD (2 hét rögzítés)</li>
               </ul>
             </td>
-            <td>2 223 920 Ft</td>
+            <td style="text-align: center; vertical-align: middle;">
+              <ul style="list-style-type:none;">
+                <li>3 002 292 Ft</li>
+                <li data-aos="zoom-in" style="color: red; font-size: 25px; font-weight: strong;">2 223 920 Ft</li>
+              </ul>
+            </td>
           </tr>
         </tbody>
       </table>
@@ -338,7 +528,7 @@
       <h3>Vezeték Nélküli Riasztó</h3>
       <table class="table">
         <thead class="thead-dark">
-          <tr>
+          <tr style="text-align: center;">
             <th scope="col">Megnevezés</th>
             <th scope="col">Leírás</th>
             <th scope="col">Ár</th>
@@ -346,7 +536,7 @@
         </thead>
         <tbody>
           <tr>
-            <td>Ajax Intelligens Központi Egység</td>
+            <td>Ajax Központi Egység</td>
             <td>
               <ul>
                 <li>értesítés telefonos applikáción</li>
@@ -354,7 +544,7 @@
                 <li>100 érzékelő és 50 felhasználó <br> támogatása személyre szabhatóan</li>
               </ul>
             </td>
-            <td>52 070 Ft</td>
+            <td style="text-align: center; vertical-align: middle;">52 070 Ft</td>
           </tr>
           <tr>
             <td>Mozgásérzékelő</td>
@@ -364,7 +554,7 @@
                 <li>88,5°-os látószög</li>
               </ul>
             </td>
-            <td>26 842 Ft</td>
+            <td style="text-align: center; vertical-align: middle;">26 842 Ft</td>
           </tr>
           <tr>
             <td>Nyitásérzékelő</td>
@@ -374,7 +564,7 @@
                 <li>bármilyen felületre rögzíthető</li>
               </ul>
             </td>
-            <td>20 904 Ft</td>
+            <td style="text-align: center; vertical-align: middle;">20 904 Ft</td>
           </tr>
           <tr>
             <td>Üvegtörés érzékelő</td>
@@ -384,7 +574,7 @@
                 <li>természeti hangok figyelmen kívül hagyása</li>
               </ul>
             </td>
-            <td>26 842 Ft</span> </td>
+            <td style="text-align: center; vertical-align: middle;">26 842 Ft</span> </td>
           </tr>
           <tr>
             <td>Füst- hő- és CO érzékelő</td>
@@ -394,7 +584,7 @@
                 <li>beépített szirénával</li>
               </ul>
             </td>
-            <td>38 714 Ft</td>
+            <td style="text-align: center; vertical-align: middle;">38 714 Ft</td>
           </tr>
           <tr>
             <td>Beázásérzékelő</td>
@@ -404,7 +594,7 @@
                 <li>vizesblokkok védelmére</li>
               </ul>
             </td>
-            <td>23 874 Ft</td>
+            <td style="text-align: center; vertical-align: middle;">23 874 Ft</td>
           </tr>
           <tr>
             <td>Beltéri sziréna</td>
@@ -414,7 +604,7 @@
                 <li>fedett helyekre</li>
               </ul>
             </td>
-            <td>26 842 Ft</td>
+            <td style="text-align: center; vertical-align: middle;">26 842 Ft</td>
           </tr>
           <tr>
             <td>Kültéri sziréna</td>
@@ -424,7 +614,7 @@
                 <li>időjárásálló</li>
               </ul>
             </td>
-            <td>41 682 Ft</td>
+            <td style="text-align: center; vertical-align: middle;">41 682 Ft</td>
           </tr>
           <tr>
             <td>Érintés vezérelt kezelő</td>
@@ -434,7 +624,7 @@
                 <li>könnyű kezelhetőség</li>
               </ul>
             </td>
-            <td>35 746 Ft</td>
+            <td style="text-align: center; vertical-align: middle;">35 746 Ft</td>
           </tr>
           <tr>
             <td>Vezérelhető dugalj</td>
@@ -445,7 +635,7 @@
                 <li>túlfeszültség elleni védelem</li>
               </ul>
             </td>
-            <td>27 564 Ft</td>
+            <td style="text-align: center; vertical-align: middle;">27 564 Ft</td>
           </tr>
         </tbody>
       </table>

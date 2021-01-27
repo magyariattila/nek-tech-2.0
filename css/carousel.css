@@ -387,6 +387,34 @@ body {
   font-size: 3em;
 }
 
+#cloud {
+  width: 100%;
+  padding: 20px;
+  background-color: #d5e8eb;
+  margin-top: 20px;
+  border-radius: 20px;
+  display: none;
+}
+
+#camera {
+  width: 100%;
+  padding: 20px;
+  background-color: #d5e8eb;
+  margin-top: 20px;
+  border-radius: 20px;
+  display: none;
+}
+
+#riaszto {
+  width: 100%;
+  padding: 20px;
+  background-color: #d5e8eb;
+  margin-top: 20px;
+  border-radius: 20px;
+  display: none;
+}
+
+
 /* Animations */
 [data-aos=example-anim1] {
   transform: skewX(45deg);
